@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .list {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .list .inner {
+            border: 1px solid;
+            float: left;    /* 부모요소에 overflow:hidden; */
+            width: 25%;
+            box-sizing: border-box;
+        }
+        .inner .content {   /* 부모 */
+            overflow: hidden;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .left span {
+            display: block;
+        }
+        .clear {
+            clear: both;    /* 플롯의 영향을 받는 상자의 해제 */
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="list">
+        <div class="inner">
+            <img src="img/bgimg.png" alt="물고기">
+            
+            <div class="content">
+                <div class="left">
+                    <span>좌측</span>   <!-- display: block으로 요소배치를 바꿈 -->
+                    <span>좌측</span>
+                    <span>좌측</span>
+                    <span>좌측</span>
+                </div>
+                <div class="right">우측1</div>
+
+                <div class="clear">     <!-- clear: both로 float의 영향을 해제 -->
+                    음...
+                </div>
+            </div>
+
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+    </div>
+    
+</body>
+</html>
