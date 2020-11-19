@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인디자인 추가 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        .zara-header{position: fixed; top: 0; width: 100%; z-index: 10;}
+        .zara-title {text-align: center; position: relative; padding: 0;}
+        .zara-title > p {
+            font-size: 100px;
+            margin: 0 auto;
+            background-color: beige;
+            z-index: 10;
+        }
+        .title-baner {background-color: rgb(36, 36, 36); padding: 10px; color: white;}
+        .title-baner span {margin: 0 25px;}
+        .zara-login {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: black;
+            background-color: beige;
+        }
+        .zara-login span {padding: 20px;}
+        section {margin-top: 12px;}
+
+        .row {margin: 0;}
+
+        .zara-main {
+            margin: 170px auto 0 auto;
+            float: none;
+            position: relative;
+        }
+        .main-tag {
+            position: absolute;
+            right: 60px;
+            top: 60px;
+        }
+        .main-tag aside {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            color: white;
+            background:rgba(0, 0, 0, 0.3);
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header class="zara-header">
+        <div class="container-flued">
+            <div class="row">
+                <div class="col-sm-12 zara-title">
+
+                    <p>Z A R A<p>
+                    <div class="title-baner">
+                        <span>WOMAN</span>
+                        <span>TRF</span>
+                        <span>MAN</span>
+                        <span>KIDS</span>
+                        <span>EDITORIALS</span>
+                    </div>
+
+                    <div class="zara-login">
+                        <span>LOGIN</span>
+                        <span>REGISTER</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 zara-main">
+                    <div class="zara-img">
+                        <img src="img/main.jpg" alt="메인컷">
+                    </div>
+                    <div class="main-tag">
+                        <aside>Category Banner</aside>
+                        <aside>Upload image and description</aside>
+                        <aside>Upload image and description</aside>
+                    </div>
+                    <div class="main-side">
+                        <aside>전화문의<br/>010-1234-5678</aside>
+                        <aside>카카오톡<br/>1:1상담</aside>
+                        <aside></aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+</body>
+</html>
