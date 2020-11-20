@@ -55,8 +55,32 @@
             color: white;
             background:rgba(0, 0, 0, 0.3);
         }
+        .main-side {
+            position: fixed;
+            right: 0px;
+            top: 437px;
+            font-size: 10px;
+            text-align: center;
+            z-index: 10;
+        }
+        .main-side aside{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 0 auto;
+        }
 
+        @media (max-width: 767px) {
+            .zara-header .zara-login,
+            .zara-main .zara-img img,
+            .main-tag, .main-side {
+                display: none;
+            }
+            .zara-header p {
+                font-size: 70px;
+            }
 
+        }
 
     </style>
 
@@ -103,9 +127,58 @@
                         <aside>Upload image and description</aside>
                     </div>
                     <div class="main-side">
-                        <aside>전화문의<br/>010-1234-5678</aside>
-                        <aside>카카오톡<br/>1:1상담</aside>
-                        <aside></aside>
+                        <aside>
+                            <div>전화문의</div>
+                            <div>010-1234-5678</div>
+                        </aside>
+                        <aside>
+                            <div>카카오톡</div>
+                            <div>1:1상담</div>
+                        </aside>
+                        <aside>
+                            <div>text</div>
+                            <div>text</div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_01.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_02.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_03.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_04.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_05.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_06.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_07.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <img src="img/img_08.jpg">
                     </div>
                 </div>
             </div>
